@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+}
+body {
+  background: url(./img/wall.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+    height: 19rem;
+    width: 68rem;
+  padding: 2px;
+}
+.watch {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  text-align: center;
+  padding-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 1.5rem;
+}
+
+.hour,
+.minutes,
+.seconds,
+.tick {
+  font-size: 10rem;
+  font-weight: 700;
+  color: azure;
+}
+.name {
+  font-size: 3rem;
+  color: azure;
+}
+
+@media (max-width: 500px) {
+  * {
+    font-size: 50%;
+  }
+  .hour,
+  .minutes,
+  .seconds,
+  .tick {
+    font-size: 4rem;
+    font-weight: 700;
+    color: azure;
+  }
+  .name {
+    font-size: 1.5rem;
+    color: azure;
+  }
+  .watch {
+    height: 19rem;
+    width: 100%;
+    padding: 1rem;
+  }
+}
